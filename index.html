@@ -166,7 +166,7 @@
     <!-- Main Body Area -->
     <main class="flex-grow pt-28 pb-20">
         
-        <!-- Hero Section -->
+        <!-- Hero Section (Imágenes de la carpeta publi) -->
         <section class="border-b border-msCream-border/80 pt-6 pb-16 lg:pb-20">
             <div class="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
@@ -230,7 +230,7 @@
                         </div>
                     </div>
 
-                    <!-- Right Hero Visual Card (Fotos de la carpeta publi) -->
+                    <!-- Right Hero Visual Card -->
                     <div class="lg:col-span-5 w-full">
                         <div class="relative rounded-3xl bg-msCream-300 p-4 sm:p-5 border-2 border-msCream-border wood-shadow">
                             <div class="relative rounded-2xl overflow-hidden aspect-square sm:aspect-4/3 lg:aspect-square bg-msWood flex items-center justify-center shadow-inner">
@@ -291,7 +291,7 @@
             </div>
         </section>
 
-        <!-- Catalog Section (5 Secciones) -->
+        <!-- Catalog Section (5 Secciones ordenadas) -->
         <section id="catalogo" class="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 pt-16 lg:pt-20">
             
             <!-- Section Header -->
@@ -302,7 +302,7 @@
                         Modelos Realizados & Catálogo
                     </h2>
                     <p class="text-msWood-dark/80 text-sm sm:text-base mt-2 max-w-xl">
-                        Explorá nuestras casas, oficinas, transporte y lotes de madera. Las fotos rotan periódicamente en cada modelo.
+                        Explorá nuestras casas, oficinas, transporte, cabañas y lotes de madera. Cada tarjeta muestra sus fotos específicas sin mezclarse.
                     </p>
                 </div>
 
@@ -320,8 +320,11 @@
                     <button onclick="applyFilter('transporte', this)" class="filter-pill px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-msCream-300 text-msWood-deep hover:bg-msCream-400 border border-msCream-border transition-all">
                         Transporte Propio
                     </button>
-                    <button onclick="applyFilter('madera', this)" class="filter-pill px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-msCream-300 text-msWood-deep hover:bg-msCream-400 border border-msCream-border transition-all">
-                        Madera de Pino
+                    <button onclick="applyFilter('cabanas', this)" class="filter-pill px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-msCream-300 text-msWood-deep hover:bg-msCream-400 border border-msCream-border transition-all">
+                        Cabañas de Pino
+                    </button>
+                    <button onclick="applyFilter('lote-madera', this)" class="filter-pill px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-msCream-300 text-msWood-deep hover:bg-msCream-400 border border-msCream-border transition-all">
+                        Lote de Madera Estructural
                     </button>
                 </div>
             </div>
@@ -595,7 +598,7 @@
 
     <!-- JavaScript Application Logic -->
     <script>
-        // Rotador de fotos para el Hero
+        // Rotador de fotos para la sección Hero (carpeta publi)
         let currentHero = 1;
         function startHeroRotator() {
             setInterval(() => {
@@ -630,14 +633,14 @@
             }, 4000);
         }
 
-        // Mapeo de fotos basado en la estructura de tus carpetas
+        // Definición estricta de las 5 secciones y sus respectivas carpetas
         const modelsData = [
             {
                 id: 1,
                 title: "Casas Prefabricadas",
                 category: "casas",
                 categoryLabel: "Casas Prefabricadas",
-                dimensions: "6.00m x 3.50m (Módulos adaptables)",
+                dimensions: "6.00m x 3.50m (Adaptable)",
                 area: "21 a 60 m²",
                 woodType: "Pino Machihembrado de 1ra",
                 roof: "Chapa con pendiente + tirantería a la vista",
@@ -688,41 +691,39 @@
             {
                 id: 4,
                 title: "Cabañas de Pino",
-                category: "casas",
-                categoryLabel: "Casas Prefabricadas",
+                category: "cabanas",
+                categoryLabel: "Cabañas de Pino",
                 dimensions: "6.00m x 7.00m",
                 area: "42 m²",
                 woodType: "Madera de Pino Estacionada",
                 roof: "Techo pronunciado a dos aguas",
                 delivery: "Fabricación a medida",
-                desc: "Estilo rústico y confortable para complejos turísticos o vivienda de fin de semana. Pino misionero tratado para resistir las inclemencias del clima.",
+                desc: "Diseños cálidos y confortables construidos con madera de pino seleccionada de aserradero propio. Excelente aislación térmica y estética natural.",
                 images: [
-                    "img/casas/casas-2.jfif",
-                    "img/casas/casas-1.jfif"
-                ],
-                fallbackImage: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1000&q=80"
-            },
-            {
-                id: 5,
-                title: "Lote de Madera Estructural",
-                category: "madera",
-                categoryLabel: "Madera de Pino",
-                dimensions: "Tirantes, tablas y clavaderas",
-                area: "Venta por lote / metro",
-                woodType: "Pino Elliotis / Taeda de 1ra",
-                roof: "Ideal para cubiertas, tinglados y encofrados",
-                delivery: "Stock permanente",
-                desc: "Tirantes calibrados, tablas cepilladas y paquetes listos para obra. Madera directamente aserrada y secada en planta misionera.",
-                images: [
-                    "img/lote-madera/lote-madera-1.jpg",
-                    "img/lote-madera/lote-madera-2.jpg",
-                    "img/lote-madera/lote-madera-3.jfif",
                     "img/madera-pino/pino-1.jfif",
                     "img/madera-pino/pino-2.jfif",
                     "img/madera-pino/pino-3.jfif",
                     "img/madera-pino/pino-4.jfif",
                     "img/madera-pino/pino-5.jfif",
                     "img/madera-pino/pino-6.jfif"
+                ],
+                fallbackImage: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1000&q=80"
+            },
+            {
+                id: 5,
+                title: "Lote de Madera Estructural",
+                category: "lote-madera",
+                categoryLabel: "Madera Estructural",
+                dimensions: "Tirantes, tablas y clavaderas",
+                area: "Venta por paquete / metro",
+                woodType: "Pino Elliotis / Taeda de 1ra",
+                roof: "Ideal para cubiertas, tinglados y encofrados",
+                delivery: "Stock permanente",
+                desc: "Madera seleccionada directamente de aserradero, sin nudos muertos, cepillada y calibrada con herramientas industriales de alta calidad.",
+                images: [
+                    "img/lote-madera/lote-madera-1.jpg",
+                    "img/lote-madera/lote-madera-2.jpg",
+                    "img/lote-madera/lote-madera-3.jfif"
                 ],
                 fallbackImage: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1000&q=80"
             }
@@ -802,7 +803,7 @@
                 `;
                 container.appendChild(card);
 
-                // Rotador individual por tarjeta cada 3.5 segundos si tiene más de 1 imagen
+                // Rotador individual por tarjeta (cada tarjeta solo recorre su propia lista de imágenes)
                 if (hasMultiple) {
                     let imgIdx = 0;
                     const intervalId = setInterval(() => {
@@ -897,7 +898,7 @@
             modalImg.onerror = () => { modalImg.src = fallbackUrl; };
             modalImg.src = initialImg;
 
-            // Rotación en el modal
+            // Rotación en la ventana modal usando exclusivamente las imágenes de esa tarjeta
             if (item.images && item.images.length > 1) {
                 let mIdx = 0;
                 modalRotatorTimer = setInterval(() => {
@@ -996,3 +997,4 @@
     </script>
 </body>
 </html>
+

@@ -11,33 +11,25 @@
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#583115">
 
-    <!-- Open Graph (WhatsApp, Facebook, Instagram) con versión para romper caché -->
+    <!-- Open Graph (WhatsApp, Redes Sociales) -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="MADERSOL">
     <meta property="og:url" content="https://madersol-web.vercel.app/">
     <meta property="og:title" content="MADERSOL | Casas y Módulos Prefabricados">
     <meta property="og:description" content="Tu hogar soñado, rápido y a tu alcance. Pino misionero de primera calidad, armado en terreno y transporte propio.">
-    
-    <!-- Ruta absoluta exacta a tu imagen real de portada -->
     <meta property="og:image" content="https://madersol-web.vercel.app/img/publi/publi-1.jfif">
     <meta property="og:image:secure_url" content="https://madersol-web.vercel.app/img/publi/publi-1.jfif">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Módulos y Casas Prefabricadas MADERSOL">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="MADERSOL | Casas & Módulos Prefabricados">
-    <meta name="twitter:description" content="Fabricación y montaje de viviendas prefabricadas con madera seleccionada en Misiones.">
-    <meta name="twitter:image" content="https://madersol-web.vercel.app/img/publi/publi-1.jfif">
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Cormorant Garamond & Outfit -->
+    <!-- Google Fonts: Syne & Plus Jakarta Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">    <!-- Lucide Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <script>
@@ -69,8 +61,8 @@
                         }
                     },
                     fontFamily: {
-                        syne: ['"Cormorant Garamond"', 'serif'],  // Aplica automáticamente a todos los títulos que ya usan 'font-syne'
-                        sans: ['Outfit', 'sans-serif']           // Aplica a todo el cuerpo, botones y fichas
+                        syne: ['Syne', 'sans-serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif']
                     },
                     maxWidth: {
                         'screen-2xl': '1440px',
@@ -152,6 +144,7 @@
                 <a href="https://wa.me/5493764378882?text=Hola%20Madersol,%20estoy%20viendo%20la%20web%20y%20quiero%20consultar%20por%20sus%20casas%20y%20m%C3%B3dulos%20prefabricados" 
                    target="_blank" 
                    rel="noopener noreferrer" 
+                   onclick="trackLead('Header WhatsApp Clic')"
                    class="hidden lg:inline-flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-[#25D366]/15 hover:bg-[#25D366]/25 border border-[#25D366]/40 text-[#136B31] font-bold text-xs transition-colors">
                     <i data-lucide="message-circle" class="w-4 h-4 text-[#25D366]"></i>
                     <span>WhatsApp 3764-378882</span>
@@ -175,7 +168,7 @@
     <!-- Main Body Area -->
     <main class="flex-grow pt-28 pb-20">
         
-        <!-- Hero Section (Imágenes de la carpeta publi) -->
+        <!-- Hero Section -->
         <section class="border-b border-msCream-border/80 pt-6 pb-16 lg:pb-20">
             <div class="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
@@ -247,6 +240,8 @@
                                     id="heroRotator1"
                                     src="img/publi/publi-1.jfif" 
                                     alt="Madersol Publicidad 1" 
+                                    fetchpriority="high"
+                                    decoding="async"
                                     class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-100"
                                     onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1542718610-a1d656d1884c?auto=format&fit=crop&w=1000&q=80';"
                                 >
@@ -254,6 +249,7 @@
                                     id="heroRotator2"
                                     src="img/publi/publi-2.jfif" 
                                     alt="Madersol Publicidad 2" 
+                                    decoding="async"
                                     class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0 pointer-events-none"
                                     onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1000&q=80';"
                                 >
@@ -300,7 +296,7 @@
             </div>
         </section>
 
-        <!-- Catalog Section (5 Secciones ordenadas) -->
+        <!-- Catalog Section -->
         <section id="catalogo" class="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 pt-16 lg:pt-20">
             
             <!-- Section Header -->
@@ -352,87 +348,31 @@
 
         </section>
 
-        <!-- Instagram Banner Dinámico -->
-<section class="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 mt-16 lg:mt-24">
-    <div class="relative overflow-hidden bg-gradient-to-br from-msCream-300 via-msCream-200 to-msCream-300 rounded-3xl p-7 sm:p-10 border-2 border-msCream-border wood-shadow hover:wood-shadow-hover transition-all duration-500 group">
-        
-        <!-- Efecto de luz ambiental decorativo de fondo -->
-        <div class="absolute -right-20 -top-20 w-64 h-64 bg-msOrange/10 rounded-full blur-3xl group-hover:scale-125 transition-transform duration-700 pointer-events-none"></div>
-        <div class="absolute -left-16 -bottom-16 w-52 h-52 bg-msWood/5 rounded-full blur-2xl pointer-events-none"></div>
-
-        <div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8">
-            
-            <!-- Lado Izquierdo: Icono Oficial + Textos + Badges Dinámicos -->
-            <div class="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-5 w-full lg:w-auto">
-                
-                <!-- Ícono animado con gradiente Instagram en SVG nativo -->
-                <div class="relative shrink-0">
-                    <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] p-0.5 shadow-lg group-hover:rotate-6 group-hover:scale-105 transition-all duration-300">
-                        <div class="w-full h-full bg-msWood-deep rounded-[14px] flex items-center justify-center p-3 sm:p-4">
-                            <svg class="w-full h-full text-white transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
-                            </svg>
-                        </div>
+        <!-- Instagram Banner -->
+        <section class="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 mt-20 lg:mt-28">
+            <div class="bg-msCream-300 rounded-3xl p-8 sm:p-12 border-2 border-msCream-border flex flex-col md:flex-row items-center justify-between gap-8 wood-shadow">
+                <div class="flex items-center gap-5">
+                    <div class="w-16 h-16 rounded-2xl bg-msWood flex items-center justify-center text-white shrink-0 wood-shadow">
+                        <i data-lucide="instagram" class="w-9 h-9 text-msOrange"></i>
                     </div>
-                    <!-- Badge pulsante en vivo -->
-                    <span class="absolute -top-1 -right-1 flex h-4 w-4">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-msOrange opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-4 w-4 bg-msOrange border-2 border-msCream-200"></span>
-                    </span>
-                </div>
-
-                <!-- Textos y métricas rápidas -->
-                <div class="space-y-1.5">
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-msWood/10 border border-msWood/15 text-msWood-dark text-xs font-bold uppercase tracking-wider">
-                        <span class="w-2 h-2 rounded-full bg-[#E1306C] animate-pulse"></span>
-                        Comunidad Oficial en Misiones
-                    </div>
-
-                    <h3 class="font-syne font-black text-2xl sm:text-3xl lg:text-4xl text-msWood-deep tracking-tight flex flex-wrap items-center justify-center sm:justify-start gap-2">
-                        <span>Instagram:</span>
-                        <span class="text-msOrange hover:underline decoration-msOrange/40 cursor-pointer">@mader.sol</span>
-                    </h3>
-
-                    <p class="text-sm sm:text-base text-msWood-dark/85 max-w-xl leading-relaxed">
-                        Seguí el día a día en taller, salidas de camiones y fotos de entregas reales en cada localidad de la provincia.
-                    </p>
-
-                    <!-- Píldoras de contenido dinámico -->
-                    <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2 pt-2">
-                        <span class="text-[11px] font-bold px-2.5 py-1 rounded-md bg-white/70 text-msWood-dark border border-msCream-border/80 flex items-center gap-1.5">
-                            📸 Fotos de Producción
-                        </span>
-                        <span class="text-[11px] font-bold px-2.5 py-1 rounded-md bg-white/70 text-msWood-dark border border-msCream-border/80 flex items-center gap-1.5">
-                            🚛 Traslados en Video
-                        </span>
-                        <span class="text-[11px] font-bold px-2.5 py-1 rounded-md bg-white/70 text-msWood-dark border border-msCream-border/80 flex items-center gap-1.5">
-                            🌲 Casas Terminadas
-                        </span>
+                    <div>
+                        <span class="text-xs font-extrabold text-msOrange uppercase tracking-wider">Comunidad Oficial</span>
+                        <h3 class="font-syne font-black text-2xl sm:text-3xl text-msWood-deep">Instagram: @mader.sol</h3>
+                        <p class="text-sm text-msWood-dark/90 mt-1">Seguí nuestras fotos y videos de entregas en tiempo real por toda la provincia de Misiones.</p>
                     </div>
                 </div>
-
+                <div class="flex items-center gap-4 w-full md:w-auto shrink-0">
+                    <a href="https://www.instagram.com/mader.sol/" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       onclick="trackLead('Instagram Visita Clic')"
+                       class="w-full md:w-auto px-7 py-3.5 rounded-xl bg-msWood hover:bg-msWood-dark text-white font-bold text-sm text-center transition-all wood-shadow hover:scale-102 flex items-center justify-center gap-2.5">
+                        <span>Visitar Perfil en Instagram</span>
+                        <i data-lucide="external-link" class="w-4 h-4 text-msOrange"></i>
+                    </a>
+                </div>
             </div>
-
-            <!-- Lado Derecho: Botón de llamada a la acción con animación Hover -->
-            <div class="w-full sm:w-auto shrink-0 flex flex-col items-center sm:items-end gap-2">
-                <a href="https://www.instagram.com/mader.sol/" 
-                   target="_blank" 
-                   rel="noopener noreferrer" 
-                   class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-msWood hover:bg-gradient-to-r hover:from-[#c13584] hover:to-[#e1306c] text-white font-extrabold text-sm sm:text-base text-center transition-all duration-300 wood-shadow hover:scale-105 active:scale-95 flex items-center justify-center gap-3 shadow-md group/btn">
-                    <span>Seguir en Instagram</span>
-                    <svg class="w-4 h-4 transition-transform duration-300 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="7" y1="17" x2="17" y2="7"/>
-                        <polyline points="7 7 17 7 17 17"/>
-                    </svg>
-                </a>
-                <span class="text-[11px] font-semibold text-msWood-light">Se abre en una pestaña nueva</span>
-            </div>
-
-        </div>
-    </div>
-</section>
+        </section>
 
     </main>
 
@@ -470,6 +410,7 @@
     <a href="https://wa.me/5493764378882?text=Hola%20Madersol,%20quisiera%20pedir%20presupuesto%20y%20conocer%20los%20modelos%20de%20casas%20prefabricadas" 
        target="_blank" 
        rel="noopener noreferrer" 
+       onclick="trackLead('Boton Flotante WhatsApp Clic')"
        class="fixed bottom-8 right-8 z-40 bg-[#25D366] hover:bg-[#1ebd5a] text-white p-4 sm:px-6 sm:py-4 rounded-full shadow-2xl flex items-center gap-3 transition-all hover:scale-105 active:scale-95 group"
        title="Chatear con Madersol por WhatsApp">
         <i data-lucide="message-circle" class="w-6 h-6"></i>
@@ -511,6 +452,7 @@
                         <a href="https://wa.me/5493764378882?text=Hola%20Madersol,%20quisiera%20hacer%20una%20consulta%20por%20un%20modelo%20prefabricado" 
                            target="_blank" 
                            rel="noopener noreferrer" 
+                           onclick="trackLead('Drawer WhatsApp Ventas Clic')"
                            class="inline-flex items-center gap-2 mt-3.5 px-5 py-2.5 bg-[#25D366] hover:bg-[#1EBE5D] text-white font-bold text-xs uppercase tracking-wider rounded-xl transition-all shadow-xs">
                             <i data-lucide="send" class="w-4 h-4"></i>
                             <span>Abrir Chat (3764378882)</span>
@@ -522,7 +464,7 @@
             <div class="space-y-3.5">
                 <span class="text-xs font-black uppercase tracking-wider text-msWood-light block">Información Directa</span>
 
-                <a href="tel:+5493764378882" class="p-4 rounded-2xl bg-msCream-300 hover:bg-msCream-400/80 border border-msCream-border flex items-center gap-3.5 transition-colors">
+                <a href="tel:+5493764378882" onclick="trackLead('Llamada Telefonica Clic')" class="p-4 rounded-2xl bg-msCream-300 hover:bg-msCream-400/80 border border-msCream-border flex items-center gap-3.5 transition-colors">
                     <div class="w-9 h-9 rounded-xl bg-msWood text-msOrange flex items-center justify-center shrink-0">
                         <i data-lucide="phone" class="w-4 h-4"></i>
                     </div>
@@ -532,7 +474,7 @@
                     </div>
                 </a>
 
-                <a href="https://www.instagram.com/mader.sol/" target="_blank" rel="noopener noreferrer" class="p-4 rounded-2xl bg-msCream-300 hover:bg-msCream-400/80 border border-msCream-border flex items-center gap-3.5 transition-colors">
+                <a href="https://www.instagram.com/mader.sol/" target="_blank" rel="noopener noreferrer" onclick="trackLead('Drawer Instagram Clic')" class="p-4 rounded-2xl bg-msCream-300 hover:bg-msCream-400/80 border border-msCream-border flex items-center gap-3.5 transition-colors">
                     <div class="w-9 h-9 rounded-xl bg-msWood text-msOrange flex items-center justify-center shrink-0">
                         <i data-lucide="instagram" class="w-4 h-4"></i>
                     </div>
@@ -664,6 +606,28 @@
 
     <!-- JavaScript Application Logic -->
     <script>
+        // Sistema de Telemetría y Rastreo de Conversión
+        function trackLead(actionName, details = {}) {
+            try {
+                if (window.dataLayer && Array.isArray(window.dataLayer)) {
+                    window.dataLayer.push({
+                        event: 'generate_lead',
+                        lead_action: actionName,
+                        ...details
+                    });
+                }
+                if (typeof window.gtag === 'function') {
+                    window.gtag('event', 'generate_lead', {
+                        event_category: 'Contacto WhatsApp',
+                        event_label: actionName,
+                        ...details
+                    });
+                }
+            } catch (err) {
+                console.debug('Analytics no inicializado:', err);
+            }
+        }
+
         // Rotador de fotos para la sección Hero (carpeta publi)
         let currentHero = 1;
         function startHeroRotator() {
@@ -699,7 +663,7 @@
             }, 4000);
         }
 
-        // Definición estricta de las 5 secciones y sus respectivas carpetas
+        // Definición estricta de las 5 secciones
         const modelsData = [
             {
                 id: 1,
@@ -829,6 +793,7 @@
                             src="${initialImg}" 
                             alt="${item.title}" 
                             loading="lazy"
+                            decoding="async"
                             class="w-full h-full object-cover transition-opacity duration-500 group-hover:scale-105"
                             onerror="this.onerror=null; this.src='${fallbackUrl}';"
                         />
@@ -869,7 +834,6 @@
                 `;
                 container.appendChild(card);
 
-                // Rotador individual por tarjeta (cada tarjeta solo recorre su propia lista de imágenes)
                 if (hasMultiple) {
                     let imgIdx = 0;
                     const intervalId = setInterval(() => {
@@ -943,7 +907,9 @@
             const userLoc = input ? input.value.trim() : '';
             const locationText = userLoc !== '' ? userLoc : '(su ubicación)';
             const textMsg = encodeURIComponent(`Hola, me comunico para solicitar un estimado del traslado hasta ${locationText}`);
-            document.getElementById('mWaBtn').href = `https://wa.me/5493764378882?text=${textMsg}`;
+            const btn = document.getElementById('mWaBtn');
+            btn.href = `https://wa.me/5493764378882?text=${textMsg}`;
+            btn.onclick = () => trackLead('Modal Transporte WhatsApp Clic', { destino: locationText });
         }
 
         let modalRotatorTimer = null;
@@ -954,6 +920,7 @@
             const modalImg = document.getElementById('mImg');
             const transportBox = document.getElementById('transportLocationBox');
             const specsBox = document.getElementById('mSpecsBox');
+            const waBtn = document.getElementById('mWaBtn');
             const waBtnText = document.getElementById('mWaBtnText');
 
             if (modalRotatorTimer) clearInterval(modalRotatorTimer);
@@ -964,7 +931,6 @@
             modalImg.onerror = () => { modalImg.src = fallbackUrl; };
             modalImg.src = initialImg;
 
-            // Rotación en la ventana modal usando exclusivamente las imágenes de esa tarjeta
             if (item.images && item.images.length > 1) {
                 let mIdx = 0;
                 modalRotatorTimer = setInterval(() => {
@@ -1002,7 +968,8 @@
                 document.getElementById('mRoof').textContent = item.roof;
 
                 const textMsg = encodeURIComponent(`Hola Madersol, vi en su web el modelo "${item.title}" (${item.dimensions}) y me gustaría recibir un presupuesto y tiempos de entrega.`);
-                document.getElementById('mWaBtn').href = `https://wa.me/5493764378882?text=${textMsg}`;
+                waBtn.href = `https://wa.me/5493764378882?text=${textMsg}`;
+                waBtn.onclick = () => trackLead('Modal Producto WhatsApp Clic', { modelo: item.title });
             }
 
             overlay.classList.remove('hidden');
@@ -1040,6 +1007,8 @@
             const type = document.getElementById('formType').value;
             const comments = document.getElementById('formComments').value.trim();
 
+            trackLead('Formulario Cotizacion Enviado', { rubro: type, cliente: name });
+
             const message = `Hola Madersol! Mi nombre es ${name}.%0A%0A*Consulta desde la web:*%0A- Servicio: ${type}%0A- Teléfono: ${phone}%0A- Detalles / Ubicación: ${comments || 'A coordinar'}`;
             const waUrl = `https://wa.me/5493764378882?text=${message}`;
             window.open(waUrl, '_blank');
@@ -1063,4 +1032,3 @@
     </script>
 </body>
 </html>
-

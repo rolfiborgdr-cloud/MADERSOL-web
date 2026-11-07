@@ -776,23 +776,28 @@
         </div>
     </div>
 
-    <!-- Lightbox Pantalla Completa Aislado -->
-    <div id="lightboxOverlay" class="fixed inset-0 z-9999 bg-black/95 backdrop-blur-md hidden flex-col items-center justify-center p-4 sm:p-6 opacity-0 transition-opacity duration-300" onclick="closeLightbox()">
-        <button onclick="closeLightbox()" class="absolute top-5 right-5 p-3 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors z-1000" aria-label="Cerrar pantalla completa">
+    <!-- Lightbox Pantalla Completa Real (Aislado y por encima de todo) -->
+    <div id="lightboxOverlay" class="fixed inset-0 hidden items-center justify-center p-4 sm:p-8 bg-black/95 backdrop-blur-md opacity-0 transition-opacity duration-300 select-none" style="z-index: 99999;" onclick="closeLightbox()">
+        <!-- Botón Cerrar -->
+        <button onclick="closeLightbox()" class="absolute top-5 right-5 p-3 rounded-full bg-white/10 hover:bg-white/25 text-white transition-all hover:scale-105" style="z-index: 100000;" aria-label="Cerrar pantalla completa">
             <i data-lucide="x" class="w-6 h-6"></i>
         </button>
-        <button onclick="prevLightboxPhoto(event)" class="absolute left-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors z-1000" aria-label="Foto anterior">
+
+        <!-- Flechas de navegación -->
+        <button onclick="prevLightboxPhoto(event)" class="absolute left-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/10 hover:bg-white/25 text-white transition-all hover:scale-105" style="z-index: 100000;" aria-label="Foto anterior">
             <i data-lucide="chevron-left" class="w-7 h-7"></i>
         </button>
-        <button onclick="nextLightboxPhoto(event)" class="absolute right-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors z-1000" aria-label="Siguiente foto">
+        <button onclick="nextLightboxPhoto(event)" class="absolute right-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/10 hover:bg-white/25 text-white transition-all hover:scale-105" style="z-index: 100000;" aria-label="Siguiente foto">
             <i data-lucide="chevron-right" class="w-7 h-7"></i>
         </button>
         
-        <div class="w-full h-full flex items-center justify-center select-none" onclick="event.stopPropagation()">
-            <img id="lightboxImg" src="" alt="Vista ampliada" class="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl transition-opacity duration-300">
+        <!-- Contenedor de la Imagen Ampliada centrada -->
+        <div class="relative w-full h-full flex items-center justify-center pointer-events-none">
+            <img id="lightboxImg" src="" alt="Vista ampliada" class="max-w-[92vw] max-h-[85vh] object-contain rounded-xl shadow-2xl transition-opacity duration-200 pointer-events-auto" onclick="event.stopPropagation()">
         </div>
         
-        <div id="lightboxCounter" class="absolute bottom-5 left-1/2 -translate-x-1/2 px-4 py-1.5 rounded-full bg-white/10 text-white font-bold text-xs tracking-wider backdrop-blur-sm pointer-events-none"></div>
+        <!-- Contador inferior -->
+        <div id="lightboxCounter" class="absolute bottom-5 left-1/2 -translate-x-1/2 px-4 py-1.5 rounded-full bg-white/10 text-white font-bold text-xs tracking-wider backdrop-blur-md pointer-events-none"></div>
     </div>
 
     <!-- JavaScript Application Logic -->
@@ -1406,11 +1411,16 @@
             const lb = document.getElementById('lightboxOverlay');
             const lbImg = document.getElementById('lightboxImg');
             const lbCounter = document.getElementById('lightboxCounter');
+            const modalBox = document.getElementById('modalContainer');
+
+            // Ocultar transitoriamente la tarjeta de la ficha técnica para que no estorbe
+            if (modalBox) modalBox.style.opacity = '0';
 
             lbImg.src = currentModalItem.images[currentModalImgIndex];
             lbCounter.textContent = `${currentModalImgIndex + 1} / ${currentModalItem.images.length}`;
 
             lb.classList.remove('hidden');
+            lb.classList.add('flex');
             setTimeout(() => {
                 lb.classList.remove('opacity-0');
                 lb.classList.add('opacity-100');
@@ -1420,10 +1430,16 @@
 
         function closeLightbox() {
             const lb = document.getElementById('lightboxOverlay');
+            const modalBox = document.getElementById('modalContainer');
+
             lb.classList.add('opacity-0');
             lb.classList.remove('opacity-100');
+
             setTimeout(() => {
+                lb.classList.remove('flex');
                 lb.classList.add('hidden');
+                // Restaurar la ficha técnica exactamente donde estaba
+                if (modalBox) modalBox.style.opacity = '1';
             }, 300);
         }
 

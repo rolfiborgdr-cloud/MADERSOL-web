@@ -457,7 +457,7 @@
             </div>
         </section>
 
-        <!-- Sección: Soporte & Problemas Técnicos de la Web (Envío a WhatsApp 3758507458) -->
+        <!-- Sección: Soporte Técnico Web (Envío a WhatsApp 3758507458) -->
         <section class="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 mt-12 mb-6">
             <div class="bg-msCream-300/40 border border-msCream-border/80 rounded-2xl p-5 sm:p-6 transition-all duration-300">
                 <button onclick="toggleTechSupport()" class="w-full flex items-center justify-between text-left group">
@@ -469,7 +469,7 @@
                             <span class="text-xs sm:text-sm font-bold text-msWood-deep block group-hover:text-msOrange transition-colors">
                                 ¿Experimentás algún problema técnico o querés dejarnos una sugerencia de la web?
                             </span>
-                            <span class="text-[11px] text-msWood-light">Hacé clic aquí para reportar errores de forma anónima y directa.</span>
+                            <span class="text-[11px] text-msWood-light">Hacé clic aquí para reportar errores o sugerencias al soporte técnico.</span>
                         </div>
                     </div>
                     <i id="techSupportIcon" data-lucide="chevron-down" class="w-5 h-5 text-msWood-light transition-transform duration-300"></i>
@@ -478,7 +478,7 @@
                 <!-- Cuadro de Texto Desplegable -->
                 <div id="techSupportBox" class="hidden mt-4 pt-4 border-t border-msCream-border/60">
                     <p class="text-xs text-msWood-dark/80 mb-3">
-                        Tu mensaje nos ayuda a mejorar el funcionamiento del sitio web. No se recopilan datos personales:
+                        Tu mensaje nos ayuda a mejorar el funcionamiento del sitio web:
                     </p>
                     <textarea 
                         id="techIssueInput" 
@@ -489,13 +489,13 @@
                     
                     <div class="flex flex-col sm:flex-row items-center justify-between gap-3 mt-3">
                         <span class="text-[11px] text-msWood-light flex items-center gap-1.5">
-                            <i data-lucide="shield-check" class="w-3.5 h-3.5 text-green-700"></i>
-                            Envío seguro al soporte técnico (+54 9 3758 50-7458)
+                            <i data-lucide="message-square" class="w-3.5 h-3.5 text-msOrange"></i>
+                            Contacto directo con el área técnica (+54 9 3758 50-7458)
                         </span>
                         <button 
                             onclick="sendTechnicalFeedback()" 
                             class="w-full sm:w-auto px-5 py-2.5 bg-msWood hover:bg-msWood-dark text-white text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-2 wood-shadow hover:scale-102">
-                            <span>Enviar reporte anónimo</span>
+                            <span>Enviar a soporte técnico</span>
                             <i data-lucide="send" class="w-3.5 h-3.5 text-msOrange"></i>
                         </button>
                     </div>
@@ -1462,13 +1462,13 @@
             const issueText = textarea ? textarea.value.trim() : '';
             
             if (!issueText) {
-                alert('Por favor, describí brevemente el inconveniente o sugerencia antes de enviar.');
+                alert('Por favor, escribí tu sugerencia o describí el problema antes de enviar.');
                 if (textarea) textarea.focus();
                 return;
             }
 
             const deviceDetail = navigator.userAgentData?.mobile ? 'Dispositivo Móvil' : 'Computadora / Navegador';
-            const message = `*Reporte de Funcionamiento Web (Anónimo)*%0A%0A*Detalle del inconveniente:*%0A"${encodeURIComponent(issueText)}"%0A%0A*Entorno:* ${encodeURIComponent(deviceDetail)}`;
+            const message = `*Reporte para Soporte Técnico Web*%0A%0A*Detalle del mensaje:*%0A"${encodeURIComponent(issueText)}"%0A%0A*Dispositivo:* ${encodeURIComponent(deviceDetail)}`;
             const waUrl = `https://wa.me/5493758507458?text=${message}`;
             window.open(waUrl, '_blank');
 

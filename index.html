@@ -14,6 +14,9 @@
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#221105">
 
+    <!-- Preload prioritario de imagen de portada (LCP) -->
+    <link rel="preload" as="image" href="img/publi/publi-1.webp" type="image/webp">
+
     <!-- Open Graph (WhatsApp, Redes Sociales) -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="MADERSOL">
@@ -26,18 +29,16 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 
+    <!-- Google Fonts con preconnect nativo y swap inmediato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Google Fonts: Cormorant Garamond & Outfit -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    
-    <link rel="preload" as="image" href="img/publi/publi-1.webp" type="image/webp">
-
     <!-- Lucide Icons -->
-   <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
 
     <script>
         tailwind.config = {

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MADERSOL | Casas & Módulos Prefabricados • Madera de Pino Misionero</title>
     
-    <!-- Favicon SVG en pestaña: Logo Madersol (Sol terracota cruzado por nube/sierra) -->
+    <!-- Favicon SVG en pestaña: Logo Madersol -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23D46820'/%3E%3Cpath d='M4 17 C8 12, 12 21, 16 16 C20 11, 24 20, 28 15 C26 23, 20 27, 16 27 C10 27, 5 22, 4 17 Z' fill='%23EDE4D4' opacity='0.9'/%3E%3Cpath d='M10 12 L14 12 L14 20 L10 20 Z' fill='%23583115'/%3E%3C/svg%3E">
 
     <!-- Metaetiquetas Básicas & SEO -->
@@ -86,7 +86,6 @@
             background-position: 0 0, 16px 16px;
         }
 
-        /* Bloqueo elástico en móviles para evitar scroll de fondo */
         .no-scroll {
             overflow: hidden !important;
             touch-action: none;
@@ -124,7 +123,7 @@
 </head>
 <body class="text-msWood-deep font-sans antialiased min-h-screen flex flex-col selection:bg-msOrange selection:text-white">
 
-    <!-- Barra de Anuncios Superior (Top Bar Alert) -->
+    <!-- Barra de Anuncios Superior -->
     <aside id="topAnnouncementBar" class="fixed top-0 left-0 w-full z-50 bg-msWood-deep text-msCream-100 text-xs py-2 px-4 border-b border-msWood-dark/80 transition-transform duration-300">
         <div class="max-w-[1440px] mx-auto flex items-center justify-between gap-3 font-medium">
             <div class="flex items-center gap-2 truncate">
@@ -132,7 +131,7 @@
                     <i data-lucide="sparkles" class="w-3 h-3"></i> Fabrica Activa
                 </span>
                 <span class="truncate text-[11px] sm:text-xs">
-                    Entregas programadas con <strong>transporte propio</strong> en toda la provincia de Misiones y la región.
+                    Entregas programadas con <strong>transporte propio</strong> en toda la provincia de Misiones y la región[cite: 1, 2].
                 </span>
             </div>
 
@@ -156,7 +155,6 @@
     <header id="mainHeader" class="fixed top-8 left-0 w-full z-40 header-glass border-b border-msCream-border/80 shadow-xs transition-all duration-200">
         <div class="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 h-24 flex items-center justify-between gap-4">
             
-            <!-- Brand Logo MADERSOL -->
             <a href="#" class="flex items-center gap-4 group py-2" aria-label="Madersol Inicio">
                 <div class="h-14 sm:h-16 flex items-center shrink-0">
                     <svg class="h-12 sm:h-14 w-auto transition-transform duration-300 group-hover:scale-105 drop-shadow-xs" viewBox="0 0 240 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -179,7 +177,6 @@
                 </div>
             </a>
 
-            <!-- Right CTA & Drawer Trigger -->
             <div class="flex items-center gap-3 sm:gap-4">
                 <a href="https://wa.me/5493764378882?text=Hola%20Madersol,%20estoy%20viendo%20la%20web%20y%20quiero%20consultar%20por%20sus%20casas%20y%20m%C3%B3dulos%20prefabricados" 
                    target="_blank" 
@@ -215,7 +212,6 @@
             <div class="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                     
-                    <!-- Left Hero Content -->
                     <div class="lg:col-span-7 space-y-6">
                         <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-msCream-300/80 border border-msCream-border text-msWood-dark text-xs sm:text-sm font-bold uppercase tracking-wider wood-shadow">
                             <i data-lucide="home" class="w-4 h-4 text-msOrange"></i>
@@ -230,10 +226,9 @@
                         </h1>
 
                         <p class="text-msWood-dark/90 text-sm sm:text-base lg:text-lg max-w-2xl font-normal leading-relaxed">
-                            Diseñamos y construimos con <strong>Madera de Pino misionero de primera calidad</strong> y tecnología industrial de precisión. Estructuras sólidas, terminaciones cálidas y montaje rápido en terreno.
+                            Diseñamos y construimos con <strong>Madera de Pino misionero de primera calidad</strong> y tecnología industrial de precisión[cite: 2]. Estructuras sólidas, terminaciones cálidas y montaje rápido en terreno[cite: 1, 2].
                         </p>
 
-                        <!-- Highlights list -->
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-1">
                             <div class="flex items-center gap-3 text-xs sm:text-sm font-bold text-msWood-dark bg-msCream-300/40 p-3 rounded-xl border border-msCream-border/50">
                                 <span class="w-7 h-7 rounded-lg bg-msOrange/20 flex items-center justify-center text-msOrange shrink-0">
@@ -261,7 +256,6 @@
                             </div>
                         </div>
 
-                        <!-- Action Buttons -->
                         <div class="flex flex-wrap items-center gap-4 pt-3">
                             <a href="#catalogo" class="px-7 py-4 rounded-xl bg-msWood hover:bg-msWood-dark text-white font-bold text-sm transition-all wood-shadow hover:scale-102 flex items-center gap-2.5">
                                 <span>Ver Catálogo de Trabajos</span>
@@ -274,17 +268,17 @@
                         </div>
                     </div>
 
-                    <!-- Right Hero Visual Card -->
+                    <!-- Tarjeta Visual Rotativa Hero con Crossfade Limpio -->
                     <div class="lg:col-span-5 w-full">
                         <div class="relative rounded-3xl bg-msCream-300 p-4 sm:p-5 border-2 border-msCream-border wood-shadow">
-                            <div class="relative rounded-2xl overflow-hidden aspect-square sm:aspect-4/3 lg:aspect-square bg-msWood flex items-center justify-center shadow-inner">
+                            <div class="relative rounded-2xl overflow-hidden aspect-square sm:aspect-4/3 lg:aspect-square bg-msWood-dark/30 flex items-center justify-center shadow-inner">
                                 <img 
                                     id="heroRotator1"
                                     src="img/publi/publi-1.jfif" 
                                     alt="Madersol Fabricación y Armado 1" 
                                     fetchpriority="high"
                                     decoding="async"
-                                    class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-100"
+                                    class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-100 z-1"
                                     onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1542718610-a1d656d1884c?auto=format&fit=crop&w=1000&q=80';"
                                 >
                                 <img 
@@ -292,7 +286,7 @@
                                     src="img/publi/publi-2.jfif" 
                                     alt="Madersol Fabricación y Armado 2" 
                                     decoding="async"
-                                    class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0 pointer-events-none"
+                                    class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0 z-2 pointer-events-none"
                                     onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1000&q=80';"
                                 >
                                 <div class="absolute top-3 right-3 px-3 py-1 rounded-lg bg-msWood/85 backdrop-blur-xs text-white text-[11px] font-bold border border-white/20 z-10">
@@ -341,7 +335,6 @@
         <!-- Catalog Section -->
         <section id="catalogo" class="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 pt-16 lg:pt-20">
             
-            <!-- Section Header -->
             <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-8 border-b-2 border-msCream-border">
                 <div>
                     <span class="text-xs font-extrabold uppercase tracking-widest text-msOrange block mb-2">Galería & Producción</span>
@@ -349,11 +342,10 @@
                         Modelos Realizados & Catálogo
                     </h2>
                     <p class="text-msWood-dark/80 text-sm sm:text-base mt-2 max-w-xl">
-                        Explorá nuestras casas, oficinas, transporte, cabañas y lotes de madera. Podés navegar las fotos con las flechas o <strong>deslizando con el dedo</strong> en el celular.
+                        Explorá nuestras casas, oficinas, transporte, cabañas y lotes de madera[cite: 1, 2, 4]. Podés navegar las fotos con las flechas o <strong>deslizando con el dedo</strong> en el celular.
                     </p>
                 </div>
 
-                <!-- Category Filters -->
                 <div class="flex flex-wrap items-center gap-2.5" id="filterBar" role="tablist" aria-label="Filtros de catálogo">
                     <button onclick="applyFilter('todos', this)" role="tab" aria-selected="true" class="filter-pill active-pill px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-msWood text-white transition-all wood-shadow">
                         Todos los Trabajos
@@ -376,12 +368,10 @@
                 </div>
             </div>
 
-            <!-- Grid Container -->
             <div id="gridContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 mt-12">
-                <!-- Inyectado vía JavaScript -->
+                <!-- Tarjetas dinámicas inyectadas vía JS -->
             </div>
 
-            <!-- Empty State -->
             <div id="noResultsAlert" class="hidden text-center py-24 bg-msCream-300/50 rounded-3xl border-2 border-dashed border-msCream-border mt-10">
                 <i data-lucide="package-open" class="w-14 h-14 text-msWood-light mx-auto mb-4"></i>
                 <h4 class="font-syne font-bold text-msWood-deep text-2xl">No encontramos modelos en esta categoría</h4>
@@ -394,16 +384,13 @@
         <section class="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 mt-16 lg:mt-24">
             <div class="relative overflow-hidden bg-gradient-to-br from-msCream-300 via-msCream-200 to-msCream-300 rounded-3xl p-7 sm:p-10 border-2 border-msCream-border wood-shadow hover:wood-shadow-hover transition-all duration-500 group">
                 
-                <!-- Efecto de luz ambiental decorativo de fondo -->
                 <div class="absolute -right-20 -top-20 w-64 h-64 bg-msOrange/10 rounded-full blur-3xl group-hover:scale-125 transition-transform duration-700 pointer-events-none"></div>
                 <div class="absolute -left-16 -bottom-16 w-52 h-52 bg-msWood/5 rounded-full blur-2xl pointer-events-none"></div>
 
                 <div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8">
                     
-                    <!-- Lado Izquierdo: Icono Oficial + Textos + Badges Dinámicos -->
                     <div class="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-5 w-full lg:w-auto">
                         
-                        <!-- Ícono animado con gradiente Instagram en SVG nativo -->
                         <div class="relative shrink-0">
                             <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] p-0.5 shadow-lg group-hover:rotate-6 group-hover:scale-105 transition-all duration-300">
                                 <div class="w-full h-full bg-msWood-deep rounded-[14px] flex items-center justify-center p-3 sm:p-4">
@@ -414,14 +401,12 @@
                                     </svg>
                                 </div>
                             </div>
-                            <!-- Badge pulsante en vivo -->
                             <span class="absolute -top-1 -right-1 flex h-4 w-4">
                                 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-msOrange opacity-75"></span>
                                 <span class="relative inline-flex rounded-full h-4 w-4 bg-msOrange border-2 border-msCream-200"></span>
                             </span>
                         </div>
 
-                        <!-- Textos y métricas rápidas -->
                         <div class="space-y-1.5">
                             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-msWood/10 border border-msWood/15 text-msWood-dark text-xs font-bold uppercase tracking-wider">
                                 <span class="w-2 h-2 rounded-full bg-[#E1306C] animate-pulse"></span>
@@ -437,7 +422,6 @@
                                 Seguí el día a día en taller, salidas de camiones y fotos de entregas reales en cada localidad de la provincia.
                             </p>
 
-                            <!-- Píldoras de contenido dinámico -->
                             <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2 pt-2">
                                 <span class="text-[11px] font-bold px-2.5 py-1 rounded-md bg-white/70 text-msWood-dark border border-msCream-border/80 flex items-center gap-1.5">
                                     📸 Fotos de Producción
@@ -453,7 +437,6 @@
 
                     </div>
 
-                    <!-- Lado Derecho: Botón de llamada a la acción -->
                     <div class="w-full sm:w-auto shrink-0 flex flex-col items-center sm:items-end gap-2">
                         <a href="https://www.instagram.com/mader.sol/" 
                            target="_blank" 
@@ -470,6 +453,52 @@
                         <span class="text-[11px] font-semibold text-msWood-light">Se abre en una pestaña nueva</span>
                     </div>
 
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Soporte & Problemas Técnicos de la Web (Envío a WhatsApp 3758507458) -->
+        <section class="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 mt-12 mb-6">
+            <div class="bg-msCream-300/40 border border-msCream-border/80 rounded-2xl p-5 sm:p-6 transition-all duration-300">
+                <button onclick="toggleTechSupport()" class="w-full flex items-center justify-between text-left group">
+                    <div class="flex items-center gap-3">
+                        <span class="w-8 h-8 rounded-lg bg-msWood/10 flex items-center justify-center text-msWood group-hover:bg-msOrange group-hover:text-white transition-colors">
+                            <i data-lucide="wrench" class="w-4 h-4"></i>
+                        </span>
+                        <div>
+                            <span class="text-xs sm:text-sm font-bold text-msWood-deep block group-hover:text-msOrange transition-colors">
+                                ¿Experimentás algún problema técnico o querés dejarnos una sugerencia de la web?
+                            </span>
+                            <span class="text-[11px] text-msWood-light">Hacé clic aquí para reportar errores de forma anónima y directa.</span>
+                        </div>
+                    </div>
+                    <i id="techSupportIcon" data-lucide="chevron-down" class="w-5 h-5 text-msWood-light transition-transform duration-300"></i>
+                </button>
+
+                <!-- Cuadro de Texto Desplegable -->
+                <div id="techSupportBox" class="hidden mt-4 pt-4 border-t border-msCream-border/60">
+                    <p class="text-xs text-msWood-dark/80 mb-3">
+                        Tu mensaje nos ayuda a mejorar el funcionamiento del sitio web. No se recopilan datos personales:
+                    </p>
+                    <textarea 
+                        id="techIssueInput" 
+                        rows="3" 
+                        placeholder="Describí brevemente qué problema ocurrió (ej: no se abre una foto, botón que no responde, texto cortado en tu celular, etc.)..." 
+                        class="w-full bg-white/90 border border-msCream-border rounded-xl p-3 text-xs sm:text-sm text-msWood-deep placeholder-msWood-light/60 focus:outline-none focus:border-msOrange focus:ring-1 focus:ring-msOrange resize-none"
+                    ></textarea>
+                    
+                    <div class="flex flex-col sm:flex-row items-center justify-between gap-3 mt-3">
+                        <span class="text-[11px] text-msWood-light flex items-center gap-1.5">
+                            <i data-lucide="shield-check" class="w-3.5 h-3.5 text-green-700"></i>
+                            Envío seguro al soporte técnico (+54 9 3758 50-7458)
+                        </span>
+                        <button 
+                            onclick="sendTechnicalFeedback()" 
+                            class="w-full sm:w-auto px-5 py-2.5 bg-msWood hover:bg-msWood-dark text-white text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-2 wood-shadow hover:scale-102">
+                            <span>Enviar reporte anónimo</span>
+                            <i data-lucide="send" class="w-3.5 h-3.5 text-msOrange"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -634,28 +663,27 @@
         </div>
     </aside>
 
-    <!-- Modal for Model Details con Swipe y Botones Manuales -->
-    <div id="modalOverlay" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-xs hidden items-center justify-center p-4 sm:p-6 opacity-0 transition-opacity duration-300" onclick="closeModelModal(event)">
+    <!-- Modal for Model Details -->
+    <div id="modalOverlay" class="fixed inset-0 z-50 bg-black/75 backdrop-blur-xs hidden items-center justify-center p-4 sm:p-6 opacity-0 transition-opacity duration-300" onclick="closeModelModal(event)">
         <div id="modalContainer" role="dialog" aria-modal="true" aria-labelledby="mTitle" class="bg-msCream-150 border-2 border-msCream-border rounded-3xl max-w-2xl w-full overflow-hidden shadow-2xl transform scale-95 transition-transform duration-300 max-h-[90vh] flex flex-col" onclick="event.stopPropagation()">
             
-            <!-- Visor Superior con Controles Manuales, Soporte Táctil y Botón Zoom -->
-            <div id="modalImageContainer" class="relative h-64 sm:h-80 w-full overflow-hidden bg-msWood shrink-0 select-none touch-pan-y group/visor">
-                <img id="mImg" src="" alt="Modelo Madersol" class="w-full h-full object-cover transition-opacity duration-300 cursor-zoom-in" onclick="openLightbox()">
+            <!-- Visor Superior con Doble Capa (Crossfade) -->
+            <div id="modalImageContainer" class="relative h-64 sm:h-80 w-full overflow-hidden bg-msWood-dark/30 shrink-0 select-none touch-pan-y group/visor">
+                <!-- Capa 1 -->
+                <img id="mImgA" src="" alt="Modelo Madersol" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 z-1 cursor-zoom-in" onclick="openLightbox()">
+                <!-- Capa 2 -->
+                <img id="mImgB" src="" alt="Modelo Madersol" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 z-2 cursor-zoom-in" onclick="openLightbox()">
                 
-                <!-- Botón Expandir / Zoom -->
                 <button onclick="openLightbox()" class="absolute top-4 left-4 p-2.5 rounded-full bg-black/60 hover:bg-black/90 text-white transition-colors z-20" aria-label="Ver imagen en pantalla completa">
                     <i data-lucide="maximize-2" class="w-4 h-4"></i>
                 </button>
 
-                <!-- Botón Cerrar Modal -->
                 <button id="closeModalBtn" onclick="closeModelModal()" class="absolute top-4 right-4 p-2.5 rounded-full bg-black/60 hover:bg-black/90 text-white transition-colors z-20" aria-label="Cerrar modal de detalles">
                     <i data-lucide="x" class="w-5 h-5"></i>
                 </button>
 
-                <!-- Categoría Tag -->
                 <span id="mTag" class="absolute bottom-4 left-4 px-3.5 py-1.5 rounded-lg bg-msWood/90 text-white font-bold text-xs uppercase tracking-wider border border-msCream-border z-20 pointer-events-none"></span>
 
-                <!-- Controles de Flecha en el Modal -->
                 <button id="modalPrevBtn" onclick="prevModalPhoto(event)" class="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/50 hover:bg-black/80 text-white flex items-center justify-center transition-all z-20" aria-label="Foto anterior en modal">
                     <i data-lucide="chevron-left" class="w-6 h-6"></i>
                 </button>
@@ -663,7 +691,6 @@
                     <i data-lucide="chevron-right" class="w-6 h-6"></i>
                 </button>
 
-                <!-- Contador de fotos en Modal -->
                 <div id="modalPhotoBadge" class="absolute bottom-4 right-4 px-2.5 py-1 rounded bg-black/60 text-white text-[11px] font-bold z-20 flex items-center gap-1 pointer-events-none">
                     <i data-lucide="camera" class="w-3.5 h-3.5 text-msOrange"></i>
                     <span id="modalPhotoIndex">1 / 1</span>
@@ -681,7 +708,6 @@
                 <h3 id="mTitle" class="font-syne font-bold text-3xl sm:text-4xl text-msWood-deep mb-2.5"></h3>
                 <p id="mDesc" class="text-msWood-dark text-sm sm:text-base leading-relaxed mb-5"></p>
 
-                <!-- Technical Specs Box -->
                 <div id="mSpecsBox" class="grid grid-cols-2 sm:grid-cols-3 gap-3 p-4 rounded-2xl bg-msCream-300 border border-msCream-border text-xs mb-5">
                     <div>
                         <span class="block text-msWood-light font-bold mb-0.5">Material Base</span>
@@ -697,7 +723,6 @@
                     </div>
                 </div>
 
-                <!-- Campo de Ubicación para Transporte Propio -->
                 <div id="transportLocationBox" class="hidden mb-5 bg-msCream-300 p-4 rounded-2xl border border-msCream-border">
                     <label for="transportAddressInput" class="block text-xs font-black uppercase tracking-wider text-msWood-deep mb-1.5 flex items-center gap-2">
                         <i data-lucide="map-pin" class="w-4 h-4 text-msOrange"></i>
@@ -713,7 +738,6 @@
                     <span class="text-[11px] text-msWood-dark/70 mt-1 block">Calculamos el flete y la logística de traslado de inmediato.</span>
                 </div>
 
-                <!-- Action Button in Modal -->
                 <div class="flex flex-col sm:flex-row items-center justify-between gap-4 border-t-2 border-msCream-border pt-5">
                     <button onclick="closeModelModal()" class="text-xs font-bold text-msWood-dark hover:text-msWood-deep transition-colors order-2 sm:order-1">
                         ← Volver al catálogo
@@ -729,26 +753,27 @@
         </div>
     </div>
 
-    <!-- Lightbox Pantalla Completa / Zoom -->
-    <div id="lightboxOverlay" class="fixed inset-0 z-60 bg-black/95 backdrop-blur-md hidden items-center justify-center p-2 sm:p-4 opacity-0 transition-opacity duration-300" onclick="closeLightbox()">
-        <button onclick="closeLightbox()" class="absolute top-5 right-5 p-3 rounded-full bg-white/10 hover:bg-white/25 text-white transition-colors z-70" aria-label="Cerrar visor ampliado">
+    <!-- Lightbox Pantalla Completa Aislado (Sin deformar el resto del sitio) -->
+    <div id="lightboxOverlay" class="fixed inset-0 z-9999 bg-black/95 backdrop-blur-md hidden flex-col items-center justify-center p-4 sm:p-6 opacity-0 transition-opacity duration-300" onclick="closeLightbox()">
+        <button onclick="closeLightbox()" class="absolute top-5 right-5 p-3 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors z-1000" aria-label="Cerrar pantalla completa">
             <i data-lucide="x" class="w-6 h-6"></i>
         </button>
-        <button onclick="prevLightboxPhoto(event)" class="absolute left-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/10 hover:bg-white/25 text-white transition-colors z-70" aria-label="Foto anterior pantalla completa">
+        <button onclick="prevLightboxPhoto(event)" class="absolute left-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors z-1000" aria-label="Foto anterior">
             <i data-lucide="chevron-left" class="w-7 h-7"></i>
         </button>
-        <button onclick="nextLightboxPhoto(event)" class="absolute right-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/10 hover:bg-white/25 text-white transition-colors z-70" aria-label="Siguiente foto pantalla completa">
+        <button onclick="nextLightboxPhoto(event)" class="absolute right-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors z-1000" aria-label="Siguiente foto">
             <i data-lucide="chevron-right" class="w-7 h-7"></i>
         </button>
-        <div class="relative max-w-5xl max-h-[90vh] w-full h-full flex items-center justify-center select-none" onclick="event.stopPropagation()">
-            <img id="lightboxImg" src="" alt="Vista ampliada" class="max-w-full max-h-full object-contain rounded-xl shadow-2xl transition-transform duration-300">
+        
+        <div class="w-full h-full flex items-center justify-center select-none" onclick="event.stopPropagation()">
+            <img id="lightboxImg" src="" alt="Vista ampliada" class="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl transition-opacity duration-300">
         </div>
-        <div id="lightboxCounter" class="absolute bottom-6 left-1/2 -translate-x-1/2 px-4 py-1.5 rounded-full bg-black/60 text-white font-bold text-xs tracking-wider"></div>
+        
+        <div id="lightboxCounter" class="absolute bottom-5 left-1/2 -translate-x-1/2 px-4 py-1.5 rounded-full bg-white/10 text-white font-bold text-xs tracking-wider backdrop-blur-sm pointer-events-none"></div>
     </div>
 
     <!-- JavaScript Application Logic -->
     <script>
-        // Cierre de la barra superior de anuncios con ajuste de paddings
         function dismissAnnouncement() {
             const bar = document.getElementById('topAnnouncementBar');
             const header = document.getElementById('mainHeader');
@@ -764,7 +789,6 @@
             }
         }
 
-        // Sistema de Telemetría y Rastreo de Conversión
         function trackLead(actionName, details = {}) {
             try {
                 if (window.dataLayer && Array.isArray(window.dataLayer)) {
@@ -786,7 +810,7 @@
             }
         }
 
-        // Rotador de fotos para la sección Hero (carpeta publi)
+        // Rotador de fotos Hero con Fade limpio sin parpadeo
         let currentHero = 1;
         function startHeroRotator() {
             setInterval(() => {
@@ -798,20 +822,20 @@
                 if (!img1 || !img2) return;
 
                 if (currentHero === 1) {
+                    img2.classList.remove('opacity-0', 'pointer-events-none');
+                    img2.classList.add('opacity-100');
                     img1.classList.remove('opacity-100');
                     img1.classList.add('opacity-0');
-                    img2.classList.remove('opacity-0');
-                    img2.classList.add('opacity-100');
                     if (dot1 && dot2) {
                         dot1.classList.replace('bg-msOrange', 'bg-white/50');
                         dot2.classList.replace('bg-white/50', 'bg-msOrange');
                     }
                     currentHero = 2;
                 } else {
-                    img2.classList.remove('opacity-100');
-                    img2.classList.add('opacity-0');
                     img1.classList.remove('opacity-0');
                     img1.classList.add('opacity-100');
+                    img2.classList.remove('opacity-100');
+                    img2.classList.add('opacity-0', 'pointer-events-none');
                     if (dot1 && dot2) {
                         dot2.classList.replace('bg-msOrange', 'bg-white/50');
                         dot1.classList.replace('bg-white/50', 'bg-msOrange');
@@ -821,7 +845,6 @@
             }, 4000);
         }
 
-        // Definición de las 5 secciones y sus imágenes
         const modelsData = [
             {
                 id: 1,
@@ -917,9 +940,9 @@
             }
         ];
 
-        // Estado y temporizadores de las tarjetas
         let activeCardIntervals = {};
         let cardCurrentIndices = {};
+        let cardActiveLayers = {}; // Registro de capa activa para fundido cruzado
 
         function renderModels(list) {
             const container = document.getElementById('gridContainer');
@@ -929,6 +952,7 @@
             Object.values(activeCardIntervals).forEach(clearInterval);
             activeCardIntervals = {};
             cardCurrentIndices = {};
+            cardActiveLayers = {};
             container.innerHTML = '';
 
             if (list.length === 0) {
@@ -939,18 +963,20 @@
 
             list.forEach(item => {
                 cardCurrentIndices[item.id] = 0;
+                cardActiveLayers[item.id] = 'A';
+
                 const card = document.createElement('article');
                 card.className = "group bg-msCream-300 rounded-3xl overflow-hidden border-2 border-msCream-border hover:border-msWood transition-all duration-300 wood-shadow hover:wood-shadow-hover flex flex-col cursor-pointer";
                 card.onclick = () => openModelModal(item);
 
                 const fallbackUrl = item.fallbackImage || 'https://placehold.co/600x400/EADBC8/583115?text=MADERSOL+Pino';
                 const initialImg = (item.images && item.images.length > 0) ? item.images[0] : fallbackUrl;
-                const cardImgId = `card-img-${item.id}`;
+                const cardImgA = `card-img-a-${item.id}`;
+                const cardImgB = `card-img-b-${item.id}`;
                 const cardBadgeId = `card-badge-${item.id}`;
                 const cardWrapperId = `card-wrapper-${item.id}`;
                 const hasMultiple = item.images && item.images.length > 1;
 
-                // Generación de puntos (dots)
                 const dotsHtml = hasMultiple ? `
                     <div id="card-dots-${item.id}" class="absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-1.5 z-20 bg-black/50 backdrop-blur-xs px-2 py-1 rounded-full pointer-events-none">
                         ${item.images.map((_, i) => `
@@ -959,40 +985,50 @@
                     </div>
                 ` : '';
 
+                // Doble imagen superpuesta con transiciones de opacidad para evitar el fondo marrón
                 card.innerHTML = `
-                    <div id="${cardWrapperId}" class="relative h-64 sm:h-72 w-full overflow-hidden bg-msWood select-none touch-pan-y">
+                    <div id="${cardWrapperId}" class="relative h-64 sm:h-72 w-full overflow-hidden bg-msWood-dark/20 select-none touch-pan-y">
                         <img 
-                            id="${cardImgId}"
+                            id="${cardImgA}"
                             src="${initialImg}" 
                             alt="${item.title}" 
                             loading="lazy"
                             decoding="async"
-                            class="w-full h-full object-cover transition-opacity duration-300 group-hover:scale-105 pointer-events-none"
+                            class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-100 z-1 group-hover:scale-105 transition-transform"
                             onerror="this.onerror=null; this.src='${fallbackUrl}';"
                         />
-                        <div class="absolute inset-0 bg-gradient-to-t from-msWood-deep/80 via-transparent to-transparent pointer-events-none"></div>
+                        <img 
+                            id="${cardImgB}"
+                            src="" 
+                            alt="${item.title}" 
+                            loading="lazy"
+                            decoding="async"
+                            class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0 z-2 group-hover:scale-105 transition-transform"
+                            onerror="this.onerror=null; this.src='${fallbackUrl}';"
+                        />
                         
-                        <span class="absolute top-4 left-4 px-3 py-1 rounded-lg bg-msCream-100/90 backdrop-blur-md text-msWood font-extrabold text-[11px] uppercase tracking-wider border border-msCream-border pointer-events-none">
+                        <div class="absolute inset-0 bg-gradient-to-t from-msWood-deep/80 via-transparent to-transparent pointer-events-none z-10"></div>
+                        
+                        <span class="absolute top-4 left-4 px-3 py-1 rounded-lg bg-msCream-100/90 backdrop-blur-md text-msWood font-extrabold text-[11px] uppercase tracking-wider border border-msCream-border pointer-events-none z-20">
                             ${item.categoryLabel}
                         </span>
 
-                        <span class="absolute bottom-4 right-4 text-xs text-white bg-msWood/90 px-2.5 py-1 rounded-md font-bold pointer-events-none">
+                        <span class="absolute bottom-4 right-4 text-xs text-white bg-msWood/90 px-2.5 py-1 rounded-md font-bold pointer-events-none z-20">
                             ${item.area}
                         </span>
 
                         ${hasMultiple ? `
-                        <!-- Controles Manuales en Tarjeta -->
-                        <div class="absolute inset-y-0 left-2 flex items-center z-20" onclick="event.stopPropagation()">
+                        <div class="absolute inset-y-0 left-2 flex items-center z-30" onclick="event.stopPropagation()">
                             <button onclick="changeCardPhoto(${item.id}, -1)" class="w-8 h-8 rounded-full bg-black/40 hover:bg-black/75 text-white flex items-center justify-center transition-all opacity-80 hover:opacity-100" aria-label="Foto anterior de ${item.title}">
                                 <i data-lucide="chevron-left" class="w-5 h-5"></i>
                             </button>
                         </div>
-                        <div class="absolute inset-y-0 right-2 flex items-center z-20" onclick="event.stopPropagation()">
+                        <div class="absolute inset-y-0 right-2 flex items-center z-30" onclick="event.stopPropagation()">
                             <button onclick="changeCardPhoto(${item.id}, 1)" class="w-8 h-8 rounded-full bg-black/40 hover:bg-black/75 text-white flex items-center justify-center transition-all opacity-80 hover:opacity-100" aria-label="Siguiente foto de ${item.title}">
                                 <i data-lucide="chevron-right" class="w-5 h-5"></i>
                             </button>
                         </div>
-                        <span id="${cardBadgeId}" class="absolute bottom-4 left-4 text-[11px] text-white/95 bg-black/60 backdrop-blur-xs px-2.5 py-0.5 rounded-md flex items-center gap-1 font-bold z-10 pointer-events-none">
+                        <span id="${cardBadgeId}" class="absolute bottom-4 left-4 text-[11px] text-white/95 bg-black/60 backdrop-blur-xs px-2.5 py-0.5 rounded-md flex items-center gap-1 font-bold z-20 pointer-events-none">
                             <i data-lucide="camera" class="w-3.5 h-3.5 text-msOrange"></i> 1 / ${item.images.length}
                         </span>
                         ${dotsHtml}` : ''}
@@ -1022,7 +1058,6 @@
                 `;
                 container.appendChild(card);
 
-                // Soporte Swipe táctil en tarjetas
                 if (hasMultiple) {
                     const cardWrapper = document.getElementById(cardWrapperId);
                     if (cardWrapper) {
@@ -1034,14 +1069,14 @@
 
                     activeCardIntervals[item.id] = setInterval(() => {
                         changeCardPhoto(item.id, 1, false);
-                    }, 4000 + (item.id * 400));
+                    }, 4500 + (item.id * 300));
                 }
             });
 
             safeLucideInit();
         }
 
-        // Navegación de fotos en tarjetas
+        // Transición de fotos mediante Crossfade directo sin pantalla vacía
         function changeCardPhoto(itemId, step, manual = true) {
             const item = modelsData.find(m => m.id === itemId);
             if (!item || !item.images || item.images.length <= 1) return;
@@ -1055,15 +1090,27 @@
             idx = (idx + step + item.images.length) % item.images.length;
             cardCurrentIndices[itemId] = idx;
 
-            const targetImg = document.getElementById(`card-img-${itemId}`);
+            const imgA = document.getElementById(`card-img-a-${itemId}`);
+            const imgB = document.getElementById(`card-img-b-${itemId}`);
             const badge = document.getElementById(`card-badge-${itemId}`);
+            const nextSrc = item.images[idx];
 
-            if (targetImg) {
-                targetImg.style.opacity = '0.3';
-                setTimeout(() => {
-                    targetImg.src = item.images[idx];
-                    targetImg.style.opacity = '1';
-                }, 180);
+            if (imgA && imgB) {
+                if (cardActiveLayers[itemId] === 'A') {
+                    imgB.src = nextSrc;
+                    imgB.classList.remove('opacity-0');
+                    imgB.classList.add('opacity-100');
+                    imgA.classList.remove('opacity-100');
+                    imgA.classList.add('opacity-0');
+                    cardActiveLayers[itemId] = 'B';
+                } else {
+                    imgA.src = nextSrc;
+                    imgA.classList.remove('opacity-0');
+                    imgA.classList.add('opacity-100');
+                    imgB.classList.remove('opacity-100');
+                    imgB.classList.add('opacity-0');
+                    cardActiveLayers[itemId] = 'A';
+                }
             }
 
             if (badge) {
@@ -1071,7 +1118,6 @@
                 safeLucideInit();
             }
 
-            // Actualizar puntos
             const dots = document.querySelectorAll(`.card-dot-${itemId}`);
             dots.forEach((dot, dIdx) => {
                 if (dIdx === idx) {
@@ -1082,7 +1128,6 @@
             });
         }
 
-        // Gestos táctiles Swipe
         function attachSwipeListener(element, onSwipeLeft, onSwipeRight) {
             let startX = 0;
             let startY = 0;
@@ -1119,7 +1164,7 @@
                     lucide.createIcons();
                 }
             } catch (e) {
-                console.warn("Lucide Icons inicializándose:", e);
+                console.warn("Lucide Icons:", e);
             }
         }
 
@@ -1143,7 +1188,6 @@
             }
         }
 
-        // Drawer
         function openDrawer() {
             const overlay = document.getElementById('drawerOverlay');
             const sidebar = document.getElementById('drawerSidebar');
@@ -1189,21 +1233,36 @@
             btn.onclick = () => trackLead('Modal Transporte WhatsApp Clic', { destino: locationText });
         }
 
-        // Manejo de fotos y Swipe dentro del Modal
+        // Manejo del Modal con Crossfade
         let currentModalItem = null;
         let currentModalImgIndex = 0;
+        let modalActiveLayer = 'A';
 
         function updateModalImage() {
             if (!currentModalItem) return;
-            const modalImg = document.getElementById('mImg');
+            const imgA = document.getElementById('mImgA');
+            const imgB = document.getElementById('mImgB');
             const badgeText = document.getElementById('modalPhotoIndex');
             const total = currentModalItem.images ? currentModalItem.images.length : 1;
+            const nextSrc = currentModalItem.images[currentModalImgIndex];
 
-            modalImg.style.opacity = '0.3';
-            setTimeout(() => {
-                modalImg.src = currentModalItem.images[currentModalImgIndex];
-                modalImg.style.opacity = '1';
-            }, 180);
+            if (imgA && imgB) {
+                if (modalActiveLayer === 'A') {
+                    imgB.src = nextSrc;
+                    imgB.classList.remove('opacity-0');
+                    imgB.classList.add('opacity-100');
+                    imgA.classList.remove('opacity-100');
+                    imgA.classList.add('opacity-0');
+                    modalActiveLayer = 'B';
+                } else {
+                    imgA.src = nextSrc;
+                    imgA.classList.remove('opacity-0');
+                    imgA.classList.add('opacity-100');
+                    imgB.classList.remove('opacity-100');
+                    imgB.classList.add('opacity-0');
+                    modalActiveLayer = 'A';
+                }
+            }
 
             if (badgeText) {
                 badgeText.textContent = `${currentModalImgIndex + 1} / ${total}`;
@@ -1227,10 +1286,12 @@
         function openModelModal(item) {
             currentModalItem = item;
             currentModalImgIndex = 0;
+            modalActiveLayer = 'A';
 
             const overlay = document.getElementById('modalOverlay');
             const box = document.getElementById('modalContainer');
-            const modalImg = document.getElementById('mImg');
+            const imgA = document.getElementById('mImgA');
+            const imgB = document.getElementById('mImgB');
             const transportBox = document.getElementById('transportLocationBox');
             const specsBox = document.getElementById('mSpecsBox');
             const waBtn = document.getElementById('mWaBtn');
@@ -1242,8 +1303,12 @@
             const fallbackUrl = item.fallbackImage || 'https://placehold.co/600x400/EADBC8/583115?text=MADERSOL+Pino';
             const initialImg = (item.images && item.images.length > 0) ? item.images[0] : fallbackUrl;
             
-            modalImg.onerror = () => { modalImg.src = fallbackUrl; };
-            modalImg.src = initialImg;
+            imgA.src = initialImg;
+            imgA.classList.remove('opacity-0');
+            imgA.classList.add('opacity-100');
+            imgB.src = '';
+            imgB.classList.remove('opacity-100');
+            imgB.classList.add('opacity-0');
 
             const hasMultiple = item.images && item.images.length > 1;
             if (hasMultiple) {
@@ -1316,7 +1381,7 @@
             }, 300);
         }
 
-        // Lightbox (Pantalla Completa y Zoom)
+        // Lightbox Pantalla Completa Aislado
         function openLightbox() {
             if (!currentModalItem || !currentModalItem.images) return;
             const lb = document.getElementById('lightboxOverlay');
@@ -1376,7 +1441,41 @@
             closeDrawer();
         }
 
-        // Navegación por teclado
+        // Lógica de Problemas Técnicos (WhatsApp al 3758507458)
+        function toggleTechSupport() {
+            const box = document.getElementById('techSupportBox');
+            const icon = document.getElementById('techSupportIcon');
+            if (!box) return;
+
+            const isClosed = box.classList.contains('hidden');
+            if (isClosed) {
+                box.classList.remove('hidden');
+                if (icon) icon.classList.add('rotate-180');
+            } else {
+                box.classList.add('hidden');
+                if (icon) icon.classList.remove('rotate-180');
+            }
+        }
+
+        function sendTechnicalFeedback() {
+            const textarea = document.getElementById('techIssueInput');
+            const issueText = textarea ? textarea.value.trim() : '';
+            
+            if (!issueText) {
+                alert('Por favor, describí brevemente el inconveniente o sugerencia antes de enviar.');
+                if (textarea) textarea.focus();
+                return;
+            }
+
+            const deviceDetail = navigator.userAgentData?.mobile ? 'Dispositivo Móvil' : 'Computadora / Navegador';
+            const message = `*Reporte de Funcionamiento Web (Anónimo)*%0A%0A*Detalle del inconveniente:*%0A"${encodeURIComponent(issueText)}"%0A%0A*Entorno:* ${encodeURIComponent(deviceDetail)}`;
+            const waUrl = `https://wa.me/5493758507458?text=${message}`;
+            window.open(waUrl, '_blank');
+
+            textarea.value = '';
+            toggleTechSupport();
+        }
+
         document.addEventListener('keydown', (e) => {
             const lb = document.getElementById('lightboxOverlay');
             const isLightboxOpen = lb && !lb.classList.contains('hidden');
@@ -1408,7 +1507,6 @@
             if (yearEl) yearEl.textContent = new Date().getFullYear();
             startHeroRotator();
 
-            // Configurar Swipe en la imagen del modal
             const modalImgContainer = document.getElementById('modalImageContainer');
             if (modalImgContainer) {
                 attachSwipeListener(modalImgContainer, 
@@ -1417,7 +1515,6 @@
                 );
             }
 
-            // Swipe en pantalla completa
             const lbOverlay = document.getElementById('lightboxOverlay');
             if (lbOverlay) {
                 attachSwipeListener(lbOverlay, 
@@ -1431,3 +1528,4 @@
     </script>
 </body>
 </html>
+

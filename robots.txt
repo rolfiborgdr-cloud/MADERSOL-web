@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://madersol-web.vercel.app/sitemap.xml
